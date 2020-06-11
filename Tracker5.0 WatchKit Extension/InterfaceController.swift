@@ -11,21 +11,29 @@ import Foundation
 
 
 class InterfaceController: WKInterfaceController {
-
-    override func awake(withContext context: Any?) {
-        super.awake(withContext: context)
+     
+    @IBAction func pushSecondInterfaceController() {
+        pushController(withName: "secondInterface", context: nil)
+    }
+    
+//    @IBOutlet var myPicker: WKInterfacePicker!
+//
+//    override init(){
+//            super.init()
+//            myPicker.setItems(setPickerItems())
+//        }
+//
+//        func setPickerItems() -> [WKPickerItem] {
+//            let firstItem = pickerItemWithTitle("Eins")
+//            let secondItem = pickerItemWithTitle("Zwei")
+//            let thirdItem = pickerItemWithTitle("Drei")
+//            return [firstItem, secondItem, thirdItem]
+//        }
+//
+//        func pickerItemWithTitle(_ title: String) -> WKPickerItem {
+//            let pickerItem = WKPickerItem()
+//            pickerItem.title = title
+//            return pickerItem
+//        }
         
-        // Configure interface objects here.
-    }
-    
-    override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
-        super.willActivate()
-    }
-    
-    override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
-        super.didDeactivate()
-    }
-
 }
