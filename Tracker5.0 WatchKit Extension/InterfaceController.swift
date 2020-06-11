@@ -16,6 +16,10 @@ class InterfaceController: WKInterfaceController {
         pushController(withName: "secondInterface", context: nil)
     }
     
+    @IBAction func quitApp(){
+        exit(0);            //unschön gelöst beim 2.Start gehen die Werte nicht mehr!
+    }
+    
 //    @IBOutlet var myPicker: WKInterfacePicker!
 //
 //    override init(){

@@ -1,5 +1,5 @@
 //
-//  secondInterface Controller.swift
+//  secondInterface_Controller.swift
 //  Tracker5.0 WatchKit Extension
 //
 //  Created by Nico Saia on 11.06.20.

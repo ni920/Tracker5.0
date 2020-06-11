@@ -17,7 +17,11 @@
                                 <action selector="pushSecondInterfaceController" destination="AgC-eL-Hgc" id="VeW-W2-Pgh"/>
                             </connections>
                         </button>
-                        <button width="1" alignment="left" title="Nein" id="4XG-MX-21T"/>
+                        <button width="1" alignment="left" title="Nein" id="4XG-MX-21T">
+                            <connections>
+                                <action selector="quitApp" destination="AgC-eL-Hgc" id="Sfr-x7-Ht3"/>
+                            </connections>
+                        </button>
                     </items>
                 </controller>
             </objects>
