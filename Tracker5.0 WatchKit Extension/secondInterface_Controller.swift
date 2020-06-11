@@ -8,11 +8,16 @@
 
 import WatchKit
 import Foundation
+import HealthKit
+
 
 
 class secondInterface_Controller: WKInterfaceController {
 
     private var auswahl: String = "leer"
+    
+    
+    
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
@@ -71,4 +76,7 @@ class secondInterface_Controller: WKInterfaceController {
                 pickerItem.title = title
                 return pickerItem
             }
+    
+    
+    // MARK: - Health
 }

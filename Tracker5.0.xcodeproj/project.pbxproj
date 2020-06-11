@@ -21,7 +21,9 @@
 		03470CF52491877F0035E6D1 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03470CF42491877F0035E6D1 /* ExtensionDelegate.swift */; };
 		03470CF72491877F0035E6D1 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03470CF62491877F0035E6D1 /* ComplicationController.swift */; };
 		03470CF92491877F0035E6D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03470CF82491877F0035E6D1 /* Assets.xcassets */; };
-		03C263AA2491985F00F865B6 /* secondInterface Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C263A92491985F00F865B6 /* secondInterface Controller.swift */; };
+		0350D0C424926F7A00CCEDE3 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0350D0C324926F7A00CCEDE3 /* HealthKit.framework */; };
+		0350D0C724926FB100CCEDE3 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0350D0C624926FB100CCEDE3 /* HealthKit.framework */; };
+		03C263AA2491985F00F865B6 /* secondInterface_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C263A92491985F00F865B6 /* secondInterface_Controller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,7 +87,11 @@
 		03470CF62491877F0035E6D1 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		03470CF82491877F0035E6D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03470CFA2491877F0035E6D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		03C263A92491985F00F865B6 /* secondInterface Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "secondInterface Controller.swift"; sourceTree = "<group>"; };
+		0350D0C124926F7A00CCEDE3 /* Tracker5.0.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tracker5.0.entitlements; sourceTree = "<group>"; };
+		0350D0C324926F7A00CCEDE3 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		0350D0C524926FB100CCEDE3 /* Tracker5.0 WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Tracker5.0 WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		0350D0C624926FB100CCEDE3 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.2.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		03C263A92491985F00F865B6 /* secondInterface_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondInterface_Controller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0350D0C424926F7A00CCEDE3 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0350D0C724926FB100CCEDE3 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +121,7 @@
 				03470CE22491877E0035E6D1 /* Tracker5.0 WatchKit App */,
 				03470CF12491877F0035E6D1 /* Tracker5.0 WatchKit Extension */,
 				03470CCB2491877D0035E6D1 /* Products */,
+				0350D0C224926F7A00CCEDE3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,6 +138,7 @@
 		03470CCC2491877D0035E6D1 /* Tracker5.0 */ = {
 			isa = PBXGroup;
 			children = (
+				0350D0C124926F7A00CCEDE3 /* Tracker5.0.entitlements */,
 				03470CCD2491877D0035E6D1 /* AppDelegate.swift */,
 				03470CCF2491877D0035E6D1 /* SceneDelegate.swift */,
 				03470CD12491877D0035E6D1 /* ViewController.swift */,
@@ -153,14 +163,24 @@
 		03470CF12491877F0035E6D1 /* Tracker5.0 WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				0350D0C524926FB100CCEDE3 /* Tracker5.0 WatchKit Extension.entitlements */,
 				03470CF22491877F0035E6D1 /* InterfaceController.swift */,
 				03470CF42491877F0035E6D1 /* ExtensionDelegate.swift */,
-				03C263A92491985F00F865B6 /* secondInterface Controller.swift */,
+				03C263A92491985F00F865B6 /* secondInterface_Controller.swift */,
 				03470CF62491877F0035E6D1 /* ComplicationController.swift */,
 				03470CF82491877F0035E6D1 /* Assets.xcassets */,
 				03470CFA2491877F0035E6D1 /* Info.plist */,
 			);
 			path = "Tracker5.0 WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		0350D0C224926F7A00CCEDE3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0350D0C624926FB100CCEDE3 /* HealthKit.framework */,
+				0350D0C324926F7A00CCEDE3 /* HealthKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,7 +325,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03C263AA2491985F00F865B6 /* secondInterface Controller.swift in Sources */,
+				03C263AA2491985F00F865B6 /* secondInterface_Controller.swift in Sources */,
 				03470CF52491877F0035E6D1 /* ExtensionDelegate.swift in Sources */,
 				03470CF32491877F0035E6D1 /* InterfaceController.swift in Sources */,
 				03470CF72491877F0035E6D1 /* ComplicationController.swift in Sources */,
@@ -473,8 +493,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Tracker5.0 WatchKit Extension/Tracker5.0 WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BSVL2ZWL9E;
+				DEVELOPMENT_TEAM = L6NXB57X67;
 				INFOPLIST_FILE = "Tracker5.0 WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -495,8 +516,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Tracker5.0 WatchKit Extension/Tracker5.0 WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BSVL2ZWL9E;
+				DEVELOPMENT_TEAM = L6NXB57X67;
 				INFOPLIST_FILE = "Tracker5.0 WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -519,7 +541,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BSVL2ZWL9E;
+				DEVELOPMENT_TEAM = L6NXB57X67;
 				IBSC_MODULE = Tracker5_0_WatchKit_Extension;
 				INFOPLIST_FILE = "Tracker5.0 WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nisko.Tracker5-0.watchkitapp";
@@ -538,7 +560,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BSVL2ZWL9E;
+				DEVELOPMENT_TEAM = L6NXB57X67;
 				IBSC_MODULE = Tracker5_0_WatchKit_Extension;
 				INFOPLIST_FILE = "Tracker5.0 WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nisko.Tracker5-0.watchkitapp";
@@ -555,8 +577,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Tracker5.0/Tracker5.0.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BSVL2ZWL9E;
+				DEVELOPMENT_TEAM = L6NXB57X67;
 				INFOPLIST_FILE = Tracker5.0/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -565,7 +588,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nisko.Tracker5-0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -573,8 +596,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Tracker5.0/Tracker5.0.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BSVL2ZWL9E;
+				DEVELOPMENT_TEAM = L6NXB57X67;
 				INFOPLIST_FILE = Tracker5.0/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -583,7 +607,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nisko.Tracker5-0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
