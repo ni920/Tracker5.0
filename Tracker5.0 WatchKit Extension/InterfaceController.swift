@@ -17,7 +17,7 @@ class InterfaceController: WKInterfaceController {
     }
     
     @IBAction func quitApp(){
-        exit(0);            //unschön gelöst beim 2.Start gehen die Werte nicht mehr!
+        exit(0);            //unschön gelöst beim 2.Start gehen die Werte nicht mehr !
     }
     
 //    @IBOutlet var myPicker: WKInterfacePicker!
