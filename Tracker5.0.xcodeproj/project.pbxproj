@@ -23,6 +23,7 @@
 		03470CF92491877F0035E6D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03470CF82491877F0035E6D1 /* Assets.xcassets */; };
 		0350D0C424926F7A00CCEDE3 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0350D0C324926F7A00CCEDE3 /* HealthKit.framework */; };
 		0350D0C724926FB100CCEDE3 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0350D0C624926FB100CCEDE3 /* HealthKit.framework */; };
+		03ADC17F2496CCA400641B3F /* thirdinterface_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ADC17E2496CCA400641B3F /* thirdinterface_Controller.swift */; };
 		03C263AA2491985F00F865B6 /* secondInterface_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C263A92491985F00F865B6 /* secondInterface_Controller.swift */; };
 /* End PBXBuildFile section */
 
@@ -91,6 +92,7 @@
 		0350D0C324926F7A00CCEDE3 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		0350D0C524926FB100CCEDE3 /* Tracker5.0 WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Tracker5.0 WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		0350D0C624926FB100CCEDE3 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.2.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		03ADC17E2496CCA400641B3F /* thirdinterface_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thirdinterface_Controller.swift; sourceTree = "<group>"; };
 		03C263A92491985F00F865B6 /* secondInterface_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondInterface_Controller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -168,6 +170,7 @@
 				03470CF42491877F0035E6D1 /* ExtensionDelegate.swift */,
 				03C263A92491985F00F865B6 /* secondInterface_Controller.swift */,
 				03470CF62491877F0035E6D1 /* ComplicationController.swift */,
+				03ADC17E2496CCA400641B3F /* thirdinterface_Controller.swift */,
 				03470CF82491877F0035E6D1 /* Assets.xcassets */,
 				03470CFA2491877F0035E6D1 /* Info.plist */,
 			);
@@ -327,6 +330,7 @@
 			files = (
 				03C263AA2491985F00F865B6 /* secondInterface_Controller.swift in Sources */,
 				03470CF52491877F0035E6D1 /* ExtensionDelegate.swift in Sources */,
+				03ADC17F2496CCA400641B3F /* thirdinterface_Controller.swift in Sources */,
 				03470CF32491877F0035E6D1 /* InterfaceController.swift in Sources */,
 				03470CF72491877F0035E6D1 /* ComplicationController.swift in Sources */,
 			);

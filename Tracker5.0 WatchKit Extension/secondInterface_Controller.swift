@@ -49,6 +49,7 @@ class secondInterface_Controller: WKInterfaceController {
         print("\(self.auswahl)")
         let datum = Date()
         print("\(datum)")
+        pushController(withName: "thirdinterface", context: nil)
     }
     
         override init(){

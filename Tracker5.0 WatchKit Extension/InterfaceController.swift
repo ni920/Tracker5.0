@@ -8,6 +8,7 @@
 
 import WatchKit
 import Foundation
+import Darwin
 
 
 class InterfaceController: WKInterfaceController {
@@ -17,27 +18,6 @@ class InterfaceController: WKInterfaceController {
     }
     
     @IBAction func quitApp(){
-        exit(0);            //unschön gelöst beim 2.Start gehen die Werte nicht mehr !
+        exit(1) //unschön gelöst beim 2.Start gehen die Werte nicht mehr!
     }
-    
-//    @IBOutlet var myPicker: WKInterfacePicker!
-//
-//    override init(){
-//            super.init()
-//            myPicker.setItems(setPickerItems())
-//        }
-//
-//        func setPickerItems() -> [WKPickerItem] {
-//            let firstItem = pickerItemWithTitle("Eins")
-//            let secondItem = pickerItemWithTitle("Zwei")
-//            let thirdItem = pickerItemWithTitle("Drei")
-//            return [firstItem, secondItem, thirdItem]
-//        }
-//
-//        func pickerItemWithTitle(_ title: String) -> WKPickerItem {
-//            let pickerItem = WKPickerItem()
-//            pickerItem.title = title
-//            return pickerItem
-//        }
-        
 }

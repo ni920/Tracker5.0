@@ -50,5 +50,18 @@
             </objects>
             <point key="canvasLocation" x="309" y="31"/>
         </scene>
+        <!--thirdinterface-->
+        <scene sceneID="rGz-06-pD5">
+            <objects>
+                <controller identifier="thirdinterface" id="qqv-Rr-a9E" customClass="thirdinterface_Controller" customModule="Tracker5_0_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" verticalAlignment="center" text="😁" id="UyB-tI-yNh">
+                            <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="550.6521739130435" y="29.598214285714285"/>
+        </scene>
     </scenes>
 </document>
