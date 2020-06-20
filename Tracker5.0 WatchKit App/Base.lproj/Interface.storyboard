@@ -42,8 +42,10 @@
                                 <action selector="erzeugeAusgabe" destination="BYU-pA-IA4" id="JOT-TT-mub"/>
                             </connections>
                         </button>
+                        <label alignment="left" text="Label" id="5xw-LY-99d"/>
                     </items>
                     <connections>
+                        <outlet property="label" destination="5xw-LY-99d" id="Zmw-k9-3Sp"/>
                         <outlet property="myPicker" destination="SM4-5U-LFL" id="T1C-3m-cP7"/>
                     </connections>
                 </controller>
